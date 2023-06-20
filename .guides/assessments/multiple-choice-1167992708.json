@@ -1,0 +1,70 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-1167992708",
+	"source": {
+		"name": "Summative Assessment #1",
+		"showName": false,
+		"instructions": "Which of the following statements are true? \n\n**Select all that apply:**",
+		"multipleResponse": true,
+		"isRandomized": true,
+		"answers": [
+			{
+				"_id": "773e7586-b2e1-35b9-34b4-f00eeae824b3",
+				"correct": true,
+				"answer": "Role directories are structured with a specific set of subdirectories, including `tasks`, `handlers`, `templates`, and `vars`."
+			},
+			{
+				"_id": "03d19618-1860-0330-80a9-6c6d554ff084",
+				"correct": true,
+				"answer": "The `import_task` module allows tasks to be imported directly into a play or task list."
+			},
+			{
+				"_id": "3c0c04cb-e53b-2599-052c-94bdb3dfc675",
+				"correct": true,
+				"answer": "The `include_role` module allows a role to be included in a playbook by name."
+			},
+			{
+				"_id": "0e5def10-ff0a-63e5-b5ca-7619378e98a3",
+				"correct": true,
+				"answer": "The `import_role` module allows a role to be imported directly into a play or task list."
+			},
+			{
+				"_id": "46c73073-e087-0698-9543-9bc46db2a296",
+				"correct": true,
+				"answer": "Role argument validation can be used to validate the input values for variables used within a role."
+			},
+			{
+				"_id": "6bf828ff-13ac-0c0c-24c7-7aca3abf22f2",
+				"correct": false,
+				"answer": "Role dependencies can be specified using the `dependencies/main.yml` file, where you can define a dependencies section to list the roles that must be installed before the current role can be used."
+			},
+			{
+				"_id": "98a95f0c-648d-22c4-07ad-a7f8689033b1",
+				"correct": false,
+				"answer": "The `import_task` module can be used to import tasks from an external YAML file into a role."
+			}
+		],
+		"guidance": " - **Incorrect:** Role dependencies can be specified using the `dependencies/main.yml` file.\n   - Corrected: Role dependencies can be specified using the `meta/main.yml` file.\n - **Incorrect:** The `import_task` module can be used to import tasks from an external YAML file into a role.\n   - Corrected: The `import_task` module is used to import a task from an external YAML file or another role, and can be used within a role's `tasks/main.yml` file. It is not used to import tasks into a role from an external YAML file.",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 0,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": true,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				}
+			],
+			"files": [],
+			"opened": []
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"type": "parsons-puzzle",
+	"taskId": "parsons-puzzle-611355893",
+	"source": {
+		"name": "Summative Assessment #5",
+		"showName": false,
+		"instructions": "Assembled the following lines of code into a `requirements.yml` with dependencies that specifies the following collections:\n - the 3.6.0 version of `community.general`\n - the 1.3.0 version of `posix`\nAdditionally, it should include version 4.3.3 geerlingguy's docker role.\n\nNote: arrange the collections and role in the order specified above. Indention matters!",
+		"initial": "collections:\n  - name: community.general\n    version: 3.6.0\n  - name: ansible.posix\n    version: 1.3.0\nroles:\n  - name: geerlingguy.docker\n    version: 4.3.3",
+		"options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":20,\"lang\":\"en\",\"show_feedback\":true}",
+		"grader": "1",
+		"guidance": "```yaml-hide-clipboard\ncollections:\n  - name: community.general\n    version: 3.6.0\n  - name: ansible.posix\n    version: 1.3.0\nroles:\n  - name: geerlingguy.docker\n    version: 4.3.3\n```\nIn this file, the `collections` section specifies two collections (`community.general` and `ansible.posix`) and their respective versions (`3.6.0` and `1.3.0`). The `roles` section specifies one role (`geerlingguy.docker`) and its version (`4.3.3`).\n",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 3
+		},
+		"maxAttemptsCount": 3,
+		"points": 20,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Parsons Puzzle"
+				}
+			],
+			"files": [],
+			"opened": []
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

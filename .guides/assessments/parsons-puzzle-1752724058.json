@@ -1,0 +1,31 @@
+{
+	"type": "parsons-puzzle",
+	"taskId": "parsons-puzzle-1752724058",
+	"source": {
+		"name": "Summative Assessment #2",
+		"showName": false,
+		"instructions": "Organize the following lines of code into a play that accomplishes the following:\n - Executes on `all`\n - Includes three tasks:\n    - The first task will use the `common` role and passes the `hostname` variable\n    - The second task will use the `nginx` role\n    - The third task will use the `create_user` role, passes the `john` variable and must be executed at the end of the play.\n\nAll lines of code will be used, and indentation matters!",
+		"initial": "- hosts: all\n  tasks:\n    - name: Common role pass hostname\n      ansible.builtin.import_role:\n        name: common\n      vars:\n        hostname: {{ &quot;hostname&quot; }}\n    - name: Nginx role\n      ansible.builtin.import_role:\n        name: nginx\n    - name: Create user john\n      ansible.builtin.include_role:\n        name: create_user\n      vars:\n        username: john",
+		"options": "{\"sortableId\":\"sortable\",\"max_wrong_lines\":10,\"exec_limit\":2500,\"can_indent\":true,\"x_indent\":20,\"lang\":\"en\",\"show_feedback\":true}",
+		"grader": "1",
+		"guidance": "```yaml-hide-clipboard\n- hosts: all\n  tasks:\n    - name: Common role pass hostname\n      ansible.builtin.import_role:\n        name: common\n      vars:\n        hostname: {{ \"hostname\" }}\n    - name: Nginx role\n      ansible.builtin.import_role:\n        name: nginx\n    - name: Create user john\n      ansible.builtin.include_role:\n        name: create_user\n      vars:\n        username: john\n```\nThe first two tasks utilize the `ansible.builtin.import_role`, which means the roles will be processed at the time the playbook is parsed. This module is used because these tasks do not need to be run at a specified moment in time, meaning static inclusion is appropriate.\n\nThe third task must use `ansible.builtin.include_role` because it must be executed at the end of the play, which means it must be dynamically included with `include role`.\n",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 3
+		},
+		"maxAttemptsCount": 3,
+		"points": 20,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Parsons Puzzle"
+				}
+			],
+			"files": [],
+			"opened": []
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

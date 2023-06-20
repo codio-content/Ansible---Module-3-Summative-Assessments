@@ -1,0 +1,60 @@
+{
+	"type": "multiple-choice",
+	"taskId": "multiple-choice-4080217818",
+	"source": {
+		"name": "Summative Assessment #4",
+		"showName": false,
+		"instructions": "Imagine you are only able to work with version 2.11 of Ansible so you must use an older version of the official Ansible collection for nginx.\n\nWhich of the following commands will correctly download version that is:\n - not older than 0.18.0\n - is older than 0.21.0 of the collection?\n\nSelect all that apply:",
+		"multipleResponse": true,
+		"isRandomized": false,
+		"answers": [
+			{
+				"_id": "d37b28f0-8813-85ce-ddd5-50bcde59ac8d",
+				"correct": true,
+				"answer": "`ansible-galaxy install nginxinc.nginx:==:0.18.0`"
+			},
+			{
+				"_id": "f993d55c-cada-2749-4482-0bd5c2358f35",
+				"correct": false,
+				"answer": "`ansible-galaxy install nginxinc.nginx:==:>=0.18.0,<=0.21.1`"
+			},
+			{
+				"_id": "5ce35401-d8de-e1f8-3141-1898ecb2f5e7",
+				"correct": false,
+				"answer": "`ansible-galaxy install nginxinc.nginx:==:>=0.18.0`"
+			},
+			{
+				"_id": "8f77e28f-052f-b471-6d3c-cda476e4cc8e",
+				"correct": true,
+				"answer": "`ansible-galaxy install nginxinc.nginx:==:>=0.18.0,<0.21.0`"
+			},
+			{
+				"_id": "dcf3a506-933c-ead6-a74b-0057fd94f954",
+				"correct": true,
+				"answer": "`ansible-galaxy install nginxinc.nginx:0.19.*`"
+			}
+		],
+		"guidance": "Correct:\n - `ansible-galaxy install nginxinc.nginx:==:0.18.0` will download version 0.18.0, which meets the requirements\n - `ansible-galaxy install nginxinc.nginx:0.19.*` will install the most recent version that begins with 0.19, which will meet the requirements.\n - `ansible-galaxy install nginxinc.nginx:==:>=0.18.0,<0.21.0` correctly specifies a range equal to or greater than 0.18.0 but less than 0.21.0\n\nIncorrect:\n - `ansible-galaxy install nginxinc.nginx:==:>=0.18.0,<=0.21.1` includes version 0.21.1, which is newer than what we require\n - `ansible-galaxy install nginxinc.nginx:==:>=0.18.0` correctly specifies that 0.18.0 or newer is required, but does not indicate that the version should be older than 0.21.0",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 2,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"incorrectPoints": 0,
+		"arePartialPointsAllowed": true,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Multiple Choice"
+				}
+			],
+			"files": [],
+			"opened": []
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": ""
+	}
+}

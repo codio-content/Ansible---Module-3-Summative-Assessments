@@ -1,0 +1,56 @@
+{
+	"type": "fill-in-the-blanks",
+	"taskId": "fill-in-the-blanks-1366851572",
+	"source": {
+		"name": "Summative Assessment #3",
+		"showName": false,
+		"instructions": "**Fill in the blanks** with the correct role and its corresponding directory.\n\nNote: you will not use every answer choice.",
+		"showValues": true,
+		"text": "1. The <<<tasks/main.yml>>> file is used to define a list of tasks that should be executed when the role is applied to a host or group of hosts.\n1. The <<<defaults/main.yml>>> file is used to define default variable values for an Ansible role.\n1. <<<handlers/main.yml>>> is a file that contains tasks that are triggered by other tasks within a role.\n1. The <<<meta/main.yml>>> file is used to specify metadata about an Ansible role, including its dependencies, supported platforms, and any other relevant information.\n1. <<<files/config.conf>>> is a specific file path that might be used in an Ansible playbook or role to represent a configuration file for a particular component or application.",
+		"distractors": "vars/main.yml\ntemplates/ntp.conf.j2",
+		"guidance": "1. the `tasks/main.yml` file is used to define a list of tasks that should be executed when the role is applied to a host or group of hosts.\n1. The `defaults/main.yml` file is used to define default variable values for an Ansible role.\n1. `handlers/main.yml` is a file within a role that contains a list of handlers, which are tasks that are triggered by other tasks within the role. \n1. the `meta/main.yml` file is used to specify metadata about an Ansible role, including its dependencies, supported platforms, and any other relevant information.\n1. In an Ansible playbook or role, you might use the `files/config.conf` path to refer to a configuration file that you want to copy to a remote host or to modify on the remote host. ",
+		"showGuidanceAfterResponseOption": {
+			"type": "Attempts",
+			"passedFrom": 2
+		},
+		"maxAttemptsCount": 2,
+		"showExpectedAnswer": true,
+		"points": 20,
+		"arePartialPointsAllowed": true,
+		"metadata": {
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Fill in the Blanks"
+				}
+			],
+			"files": [],
+			"opened": []
+		},
+		"bloomsObjectiveLevel": "",
+		"learningObjectives": "",
+		"tokens": {
+			"blank": [
+				"tasks/main.yml",
+				"defaults/main.yml",
+				"handlers/main.yml",
+				"meta/main.yml",
+				"files/config.conf"
+			],
+			"text": [
+				"1. The ",
+				0,
+				" file is used to define a list of tasks that should be executed when the role is applied to a host or group of hosts.\n1. The ",
+				0,
+				" file is used to define default variable values for an Ansible role.\n1. ",
+				0,
+				" is a file that contains tasks that are triggered by other tasks within a role.\n1. The ",
+				0,
+				" file is used to specify metadata about an Ansible role, including its dependencies, supported platforms, and any other relevant information.\n1. ",
+				0,
+				" is a specific file path that might be used in an Ansible playbook or role to represent a configuration file for a particular component or application."
+			],
+			"regexPositions": []
+		}
+	}
+}
